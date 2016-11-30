@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="2"
+    >
+
+    <TextView
+        android:text="SORRY, SOMETHING WRONG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myImage" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:onClick="onButtom1Click" />
+
+        <Button
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:onClick="onButtom2Click" />
+    </LinearLayout>
+
+</LinearLayout>
